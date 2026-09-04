@@ -105,6 +105,8 @@
 
 // Rohit 12312 18 gen
 
+
+//object:::::
 // let user = {
 //     name:"Rohit",
 //     account:12312,
@@ -114,10 +116,13 @@
 
 // console.log(typeof user);
 
+
+//javscript ko function me store kra sakte h
 // let s = function add(){
 //     console.log("Hello");
 // }
 
+// console.log(s);   or  can call by s();
 // console.log(typeof s);
 
 
