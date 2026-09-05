@@ -41,19 +41,24 @@
 // let a = Number(z);
 
 // console.log(a);
+
+
 // NaN: Not a number(Type of it is number)
 
 // let a = "121ac";
 // let b = Number(a);
-
+//console.log(b);         //Nan
 // console.log(typeof b);
+
+//console.log(0/0);   //Nan
+
 
 // let a = true;
 // console.log(Number(true));
 // console.log(Number(false));
 
-// console.log(Number(null));
-// console.log(Number(undefined));
+// console.log(Number(null));         //0
+// console.log(Number(undefined));   //Nan
 
 // null--> 0
 //  undefined-->NaN
