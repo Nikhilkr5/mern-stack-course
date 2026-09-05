@@ -41,19 +41,22 @@
 // let a = Number(z);
 
 // console.log(a);
+//console.log(typeof a);
 // NaN: Not a number(Type of it is number)
 
 // let a = "121ac";
 // let b = Number(a);
-
+//console.log(b);         //Nan
 // console.log(typeof b);
+
+//console.log(0/0);   //Nan
 
 // let a = true;
 // console.log(Number(true));
 // console.log(Number(false));
 
-// console.log(Number(null));
-// console.log(Number(undefined));
+// console.log(Number(null));         //0
+// console.log(Number(undefined));   //Nan
 
 // null--> 0
 //  undefined-->NaN
@@ -66,24 +69,38 @@
 // "true"
 // true
 
+//console.log(String(true));   //true
+// console.log(type of String(true));   //this true will be the string not boolean
+
+////console.log(String(undefined));  //undefined
 // console.log(typeof String(undefined));
+
+//console.log(String(null));   //null
+
 
 
 // Boolean convert karunga
+// console.log(Boolean(10));  //true       //jo v aapke existing value hai, wo sab apko true degi, 1, 2,3,4 ya negative wo sab apko true degi 
+// console.log(Boolean(-10));  //true
+// console.log(Boolean(0));     //false      //sirf 0 hi false dega
+// console.log(Boolean("Hello world"));         //true
+// console.log(Boolean(""));                    //false kyuki empty string h
+// console.log(Boolean(null));    //false
+// console.log(Boolean(undefined));    //false
 
-// console.log(Boolean(0));
-// console.log(Boolean(""));
-// console.log(Boolean(null));
 
 
 // computer science challenge
-
 // let a = 0.1;
 // let b = 0.2;
 
 // let c = a+b;
 
 // console.log(c);
+//console.log(c==0.3);    //false
+
+
+
 
 // 1: null is loosely equal to undefined only
 
