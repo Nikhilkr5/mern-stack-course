@@ -97,28 +97,28 @@
 // let c = a+b;
 
 // console.log(c);
-//console.log(c==0.3);    //false
+//console.log(c==0.3);    //false       //problem in javascript
 
 
 
 
 // 1: null is loosely equal to undefined only
 
-// console.log(null==undefined);
-// console.log(null===undefined);
-// console.log(null==0);
-// console.log(null=="");
-// console.log(null==false);
-// console.log(null==true);
+// console.log(null==undefined);   //true
+// console.log(null===undefined);   //false
+// console.log(null==0);     //false
+// console.log(null=="");    //false
+// console.log(null==false);    //false
+// console.log(null==true);      //false
 
-// >,<,>=,<= (null --> number, undefined --> NaN)
+// >,<,>=,<= (null --> number, undefined --> NaN)         //jab ye operators honge to apka type conversion ho jayega
 
-// console.log(null>=0);
-// console.log(null<=0);
-// console.log(null>0);
-// console.log(null<0);
-// console.log(null>=undefined);
-// console.log(undefined>=0);
+// console.log(null>=0);      //true
+// console.log(null<=0);      //true
+// console.log(null>0);       //false
+// console.log(null<0);        //false
+// console.log(null>=undefined);        //false
+// console.log(undefined>=0);            //false
 
 // console.log("Rohit">"Rahit");
 
