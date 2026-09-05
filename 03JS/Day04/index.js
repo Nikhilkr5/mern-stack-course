@@ -120,19 +120,28 @@
 // console.log(null>=undefined);        //false
 // console.log(undefined>=0);            //false
 
-// console.log("Rohit">"Rahit");
+// console.log("Rohit">"Rahit");       //true      //ye value by value compare krega
+//console.log("Rohit">"Mohit");        //true
 
-// console.log(10<true);
+//by comparing the ascii value
+// Because 'R' > 'M', JavaScript immediately evaluates the expression as true without
+// needing to check the rest of the characters.
+
+
+//console.log(10>=true);      //true
+// console.log(10<true);      //false
 
 // Ek koi bhi type hai, usko agar muje compare karna hai dusre kisi type se
-// Dono number mein convert honge
+// Dono number mein convert honge   fir comparison hoga
 
-// console.log(null>="");
+// console.log(null>="");    //true
 
 
-// console.log(NaN == NaN);
+// console.log(NaN == NaN);     //false
 
-// loop kaise kaam karte hai
+
+
+// loop kaise kaam karte hai:::
 
 // for loop
 
@@ -196,25 +205,36 @@
 
 // logical And&& , || 
 
-// console.log(true&&true);
-// console.log(true&&false);
-// console.log(false&&false);
-// console.log(false&&true);
+// console.log(true&&true);         //true
+// console.log(true&&false);        //false
+// console.log(false&&false);        //false
+// console.log(false&&true);          //false
 
-// console.log(true||true);
-// console.log(true||false);
-// console.log(false||false);
-// console.log(false||true);
+// console.log(true||true);          //true
+// console.log(true||false);          //true
+// console.log(false||false);            //false
+// console.log(false||true);            //true
+
+// let a = "Rohit";
+// let b = "Mohit";
+// let c = a&&b; 
+// console.log(c);    //Mohit
+
+
+// let a = "";
+// let b = "Mohit";
+// let c = a&&b; 
+// console.log(c);        //Output:            //kuchh v nhi ayega
 
 // let a = "Rohit";
 // let b = "";
-// let c = a&&b;
-// console.log(c);
+// let c = a&&b; 
+// console.log(c);       //Output:            //kuchh v nhi ayega
 
 // let a = 0;
 // let b = 20;
 
-// console.log(a&&b);
+// console.log(a&&b);       //0
 // &&: If first value is false, it will return the first value itself
 // If first value is true, it will return second
 
@@ -228,10 +248,33 @@ console.log(a||b);
 // &&: If first value is true, it will return the first value itself
 // If first value is false, it will return second
 
+
 // !=
-// console.log(5!=5);
+// console.log(4!=5);         //true
+// console.log(5!=5);        //false
 
 
 // AND: & , | or
 
-console.log(2&5);
+// console.log(2&5);
+// console.log(2&3);
+
+/*
+// Bitwise AND (&)
+// Compare binary bits:
+// 1 & 1 = 1
+// Otherwise = 0
+
+// Example:
+// 2 = 010
+// 3 = 011
+//     ---
+//     010 = 2
+console.log(2 & 3); // 2
+
+// 2 = 010
+// 5 = 101
+//     ---
+//     000 = 0
+console.log(2 & 5); // 0
+*/
