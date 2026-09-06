@@ -55,42 +55,70 @@
 // console.log(obj1==obj2);   //false    
 
 
-// let obj2 = obj1;   //dono ek hi object ke refernece ko point out kr rhe isliye
+// let obj2 = obj1;   //dono ek hi objedono ek hict ke refernece ko point out kr rhe isliye
 // console.log(obj1==obj2);   //true
 
 
-// Non Primitive: Reference bases pe compare
-// Primitive: Copy by value
+
+//lekin agar aap aise krte to  ab ye ek hi point kr rhe honge
+// let a = new Number(20);
+// let b = a;
+
+//we do not use this method in general , only in rare to rare case
+
+
+// console.log(Boolean(0));   //false me convert ho jata 
+// console.log(Boolean(10));
+
+//but see if i do this:
+// console.log(Boolean(new Number(0)));   //to dekhna  ye true hi mark krega
+// console.log(Boolean(new Number(10)));   //true 
+
+//itna ganda behaviour hai ye
+//0 ke liye v true ,  1 ke liye v true
+//kyuki ye hai aapka object
+//objectv agar empty v hota hai to v true hi mark krta hai
+
+//example:
+// console.log(Boolean({})); //true
+// console.log(Boolean({name:"Rohit"})); //true
+// console.log(Boolean([]})); //true
+
+
+
+// Non Primitive: Reference bases pe compare honge hamesha
+// Primitive: Copy by value 
 // let a = 10;
 // let b = a;
 
-// console.log(a==b);
+// console.log(a==b);   //true   //kyuki yaha data ke basis pe comparison hoga  na ki reference ke basis pe
 
 
 
-// console.log(Math.abs(-4));
-// console.log(Math.PI);
-// console.log(Math.LN10);
-// console.log(Math.SQRT2);
-// console.log(Math.ceil(6.3));
-// console.log(Math.floor(6.3));
-// console.log(Math.log10(20));
-// console.log(Math.max(20,11,3421,12));
-// console.log(Math.random());
+// console.log(Math.abs(-4));   // 4
+// console.log(Math.PI);        // value of pi will be printed
+// console.log(Math.LN10);      //value of log 10 will be printed
+// console.log(Math.SQRT2);      //square root of 2 will get printed
+// console.log(Math.ceil(2.3));    //isko upar le ke chala jayega  yani 3 will get printed 
+// console.log(Math.floor(2.3));    //apne niche wale value me a ajayega   //2 
+// console.log(Math.ceil(6.3));    //7  
+// console.log(Math.floor(6.3));     //6
+// console.log(Math.log10(20));      //10 ki power kitni ki wo 20 ke equal ho jaye  //1.3010299956639813
+// console.log(Math.max(20,11,3421,12));      //3421      //aise hi minimum wala v kaam krega
+// console.log(Math.random());     //some random value will be generated     //it will in the range of [0,1)   
 // [0,1): It will generate value between 0 and 1, where 0 is included but 1 is not included
 
 
 // Satebaaji ek game banata:(0-9)
+// console.log(Math.floor(Math.random()*10));   //0 se 9 tak ki vallue generate hogi
+// console.log(Math.floor(Math.random()*10)+1);    //ab 1 se 10 ki value generate hogi
+// console.log(Math.floor(Math.random()*6));  // 0 se 5 tak    //f;oor wali value not decimal
+// console.log(Math.floor(Math.random()*6)+1);      //now 1 to 6 tk generate hogi
+//formulae:
+// Math.floor(Math.random()*totalNumberOfOutcome)+shift)
 
-// console.log(Math.floor(Math.random()*10)+1);
 
-// console.log(Math.floor(Math.random()*6)+1);
-
-// Math.floor(Math.random()*totalNumberOfOutcome)+shift
-
-
-// 15-25
-
+// 15-25 generate krne ke liye:::
 
 // console.log(Math.floor(Math.random()*11)+15)
 
