@@ -1,23 +1,48 @@
 // String
-// const str1 = "Rohitboy";
-// const str2 = 'Rohit Negi';
+// const str1 = "Rohitboy";  ///isme problem ye hai ki sara ka sara ek hi line me likhna parega  //agr next line me jateho to error
+// const str2 = 'Rohit Negi';    //same problem here also  agar next line me string ko likhte ho ya le jate ho
 // const day = 18;
-// const str3 = `Strike is coming on ${day}`;
+// const str3 = `Strike is coming on ${day}`;     //ye modern tareeka hai string create krne ka 
+//isme koi problem nhi hai
+
+//const str3 = `Strike      //yaha no prolem agar next line v le jate ho
+// is coming soon
+// `;
+
+// console.log(str1,str2,str3);
 
 // console.log(str3);
 
-// const str = `Hello Coder Army`;
 
-// console.log(str.length)
-// console.log(str[1]);
 
-// str[2] = "S";
-// console.log(str)
 
-// upper case
+// const str = `Hello Coder Army`;        //ye string immutable hai
+
+// console.log(str.length)    //16     //spacesa re also counted because spaces are also special characters
+// console.log(str[1]);    //mai single character ko v access kr skta hu    //Output:: H
+//ye string immutable hai
+// str[2] = "S";      //changing or editing not possible 
+// console.log(str)     //no change in the string
+
+// upper case me convert krne ke liye:::
+//console.log( str.toUpperCase());
+//note: ye upper case ka operation krne par original string  jo tha usme change nhi hua hoga , kyuki string immutable hai
+//ek nyi string di jayegi hamesha
+//prove::
+//console.log(str);    //dekhon original string me kuuchh v channge nnhi hua hai
+
+
+//lekin agar mai aise krta hu to ::
+// const a = str.toUpperCase();        //uppercase me convert kiya , nayi string create hui  aur us nayi string ko a ke andar dala h
+// console.log(a)   // to ye change(convert) hua hai
+
+
+
 // const a = str.toUpperCase();
-// const b = str.toLowerCase();
-// console.log(b);
+// const b = str.toLowerCase();    //now lower case me convert hoga
+// console.log(b);     //string lower case me convert ho gya
+
+
 
 // const str = `Hello Coder Army Coder`;
 
